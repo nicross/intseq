@@ -1,3 +1,4 @@
+from collections import deque
 from .utility import is_prime
 from .utility import is_square
 
@@ -52,20 +53,21 @@ def A000668():
 
         n += 1
 
-
 # Golomb's sequence
 def A001462():
-    a = [1, 2, 2]
-    for n in a:
+    for n in [1, 2, 2]:
         yield n
 
+    q = deque([2])
     n = 3
+
     while True:
-        for i in range(a[n - 1]):
+        for i in range(q[0]):
             yield n
-            a.append(n)
+            q.append(n)
 
         n += 1
+        q.popleft()
 
 # The nonnegative even numbers
 def A005408():
