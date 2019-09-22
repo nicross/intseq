@@ -6,8 +6,8 @@ def collect(generator, count):
 
     results = []
 
-    for i in generator():
-        results.append(i)
+    for n in generator():
+        results.append(n)
 
         if len(results) == count:
             break
