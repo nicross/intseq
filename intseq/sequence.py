@@ -69,7 +69,7 @@ def A001462():
         n += 1
         q.popleft()
 
-# The nonnegative even numbers
+# The odd numbers
 def A005408():
     n = 1
     while True:
