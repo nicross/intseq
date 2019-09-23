@@ -69,6 +69,14 @@ def A001462():
         n += 1
         q.popleft()
 
+# n appears n times
+def A002024():
+    n = 1
+    while True:
+        for x in range(n):
+            yield n
+        n += 1
+
 # The odd numbers
 def A005408():
     n = 1
