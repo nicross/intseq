@@ -1,3 +1,4 @@
+import math
 from collections import deque
 from .utility import is_prime
 from .utility import is_square
@@ -41,6 +42,15 @@ def A000045():
     while True:
         [previous, current] = [current, current + previous]
         yield current
+
+# Catalan numbers
+def A000108():
+    n = 0
+    while True:
+        x = math.factorial(2 * n)
+        x /= math.factorial(n + 1) * math.factorial(n)
+        yield int(x)
+        n += 1
 
 # The squares
 def A000290():
