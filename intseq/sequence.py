@@ -23,6 +23,14 @@ def A000040():
 
         n += 1
 
+# Mersenne exponents
+def A000043():
+    n = 2
+    while True:
+        if is_prime(n) and is_prime(2 ** n - 1):
+            yield n
+        n += 1
+
 # Fibonacci numbers
 def A000045():
     [previous, current] = [0, 1]
@@ -41,12 +49,12 @@ def A000290():
         yield n ** 2
         n += 1
 
-# The mersenne primes
+# Mersenne primes
 def A000668():
     n = 2
     while True:
         if is_prime(n):
-            x = (2 ** n) - 1
+            x = 2 ** n - 1
 
             if is_prime(x):
                 yield x
