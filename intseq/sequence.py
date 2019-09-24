@@ -1,5 +1,7 @@
 import math
 from collections import deque
+from .utility import digit_product
+from .utility import digit_sum
 from .utility import is_prime
 from .utility import is_square
 
@@ -108,3 +110,17 @@ def A005843():
     while True:
         yield n
         n += 2
+
+# Digital sum of n
+def A007953():
+    n = 0
+    while True:
+        yield digit_sum(n)
+        n += 1
+
+# Product of decimal digits of n
+def A007954():
+    n = 0
+    while True:
+        yield digit_product(n)
+        n += 1
