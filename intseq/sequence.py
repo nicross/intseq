@@ -45,6 +45,13 @@ def A000045():
         [previous, current] = [current, current + previous]
         yield current
 
+# Powers of 2
+def A000079():
+    n = 0
+    while True:
+        yield 2 ** n
+        n += 1
+
 # Catalan numbers
 def A000108():
     n = 0
