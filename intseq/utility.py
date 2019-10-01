@@ -3,6 +3,20 @@ import operator
 
 from functools import reduce
 
+def cached_pure_function(fn):
+    cache = dict()
+    
+    def wrapper(*args):
+        if args in cache:
+            return cache[args]
+
+        x = fn(*args)
+        cache[args] = x
+
+        return x
+
+    return wrapper
+
 def digit_product(n):
     return reduce(operator.mul, [digit for digit in digits(n)])
 
@@ -13,6 +27,7 @@ def digits(n):
     for digit in str(n):
         yield int(digit)
 
+@cached_pure_function
 def is_prime(n):
     if n == 1:
         return False
