@@ -5,7 +5,7 @@ from functools import reduce
 
 def cached_pure_function(fn):
     cache = dict()
-    
+
     def wrapper(*args):
         if args in cache:
             return cache[args]
@@ -47,3 +47,11 @@ def is_prime(n):
 def is_square(n):
     sqrt = math.sqrt(n)
     return sqrt == math.floor(sqrt)
+
+def yield_prime():
+    n = 2
+    while True:
+        if is_prime(n):
+            yield n
+
+        n += 1

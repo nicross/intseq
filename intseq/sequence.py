@@ -4,6 +4,7 @@ from .utility import digit_product
 from .utility import digit_sum
 from .utility import is_prime
 from .utility import is_square
+from .utility import yield_prime
 
 # The zero sequence
 def A000004():
@@ -19,12 +20,8 @@ def A000027():
 
 # The primes
 def A000040():
-    n = 2
     while True:
-        if is_prime(n):
-            yield n
-
-        n += 1
+        return yield_prime()
 
 # Mersenne exponents
 def A000043():
