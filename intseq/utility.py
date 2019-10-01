@@ -4,7 +4,7 @@ import operator
 from functools import reduce
 
 def cached_pure_function(fn):
-    cache = dict()
+    cache = {}
 
     def wrapper(*args):
         if args in cache:
