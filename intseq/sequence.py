@@ -5,6 +5,7 @@ from .utility import digit_product
 from .utility import digit_sum
 from .utility import is_prime
 from .utility import is_square
+from .utility import prime_factorization
 from .utility import yield_prime
 
 # The zero sequence
@@ -117,6 +118,14 @@ def A005843():
     while True:
         yield n
         n += 2
+
+# Greatest prime factorization of n
+def A006530():
+    yield 1
+    n = 2
+    while True:
+        yield prime_factorization(n)[-1]
+        n += 1
 
 # Digital sum of n
 def A007953():

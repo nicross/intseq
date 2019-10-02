@@ -15,5 +15,6 @@ Implementations of select [OEIS](http://oeis.org/) integer sequences in Python 3
 - [A002024](http://oeis.org/A002024): n appears n times
 - [A005408](http://oeis.org/A005408): The odd numbers
 - [A005843](http://oeis.org/A005843): The even numbers
+- [A006530](http://oeis.org/A006530): Greatest prime factor of n
 - [A007953](http://oeis.org/A007953): Digital sum of n
 - [A007954](http://oeis.org/A007954): Digital product of n
