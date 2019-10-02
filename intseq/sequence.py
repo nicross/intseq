@@ -13,6 +13,11 @@ def A000004():
     while True:
         yield 0
 
+# The one sequence
+def A000012():
+    while True:
+        yield 1
+
 # The positive integers
 def A000027():
     n = 1
