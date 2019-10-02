@@ -17,6 +17,30 @@ def cached_pure_function(fn):
 
     return wrapper
 
+def cached_pure_generator(fn):
+    caches = {}
+    iterator = fn()
+
+    def wrapper(*args):
+        index = 0
+
+        if args not in caches:
+            caches[args] = []
+
+        cache = caches[args]
+
+        while True:
+            if index < len(cache):
+                n = cache[index]
+            else:
+                n = next(iterator)
+                cache.append(n)
+
+            yield n
+            index += 1
+
+    return wrapper
+
 def digit_product(n):
     return reduce(operator.mul, [digit for digit in digits(n)])
 
