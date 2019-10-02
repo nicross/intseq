@@ -14,6 +14,13 @@ def collect(generator, count):
 
     return results
 
+def get(generator, index):
+    i = 0
+    for n in generator():
+        if i == index:
+            return n
+        i += 1
+
 print('The zero sequence:', collect(sequence.A000004, 10))
 print('The positive integers:', collect(sequence.A000027, 10))
 print('The primes:', collect(sequence.A000040, 10))
