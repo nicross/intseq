@@ -75,6 +75,23 @@ def is_square(n):
     sqrt = math.sqrt(n)
     return sqrt == math.floor(sqrt)
 
+def prime_factorization(n):
+    if n <= 1:
+        return []
+
+    if is_prime(n):
+        return [n]
+
+    result = []
+
+    for i in yield_prime():
+        while n % i == 0:
+            result.append(i)
+            n /= i
+
+        if n == 1:
+            return result
+
 def yield_prime():
     n = 2
     while True:
