@@ -20,8 +20,8 @@ def A000027():
 
 # The primes
 def A000040():
-    while True:
-        return yield_prime()
+    for n in yield_prime():
+        yield n
 
 # Mersenne exponents
 def A000043():
