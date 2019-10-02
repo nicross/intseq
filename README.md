@@ -3,7 +3,7 @@ Implementations of select [OEIS](http://oeis.org/) integer sequences in Python 3
 
 ## Included sequences
 - [A000004](http://oeis.org/A000004): The zero sequence
-- [A000012](http://oeis.org/A000027): The one sequence
+- [A000012](http://oeis.org/A000012): The one sequence
 - [A000027](http://oeis.org/A000027): The positive integers
 - [A000040](http://oeis.org/A000040): The primes
 - [A000043](http://oeis.org/A000043): Mersenne exponents
