@@ -25,6 +25,12 @@ def A000027():
         yield n
         n += 1
 
+# Parity of n
+def A000035():
+    while True:
+        yield 0
+        yield 1
+
 # The primes
 def A000040():
     for n in yield_prime():

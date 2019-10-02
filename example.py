@@ -24,6 +24,7 @@ def get(generator, index):
 print('The zero sequence:', collect(sequence.A000004, 10))
 print('The one sequence:', collect(sequence.A000012, 10))
 print('The positive integers:', collect(sequence.A000027, 10))
+print('Parity of n:', collect(sequence.A000035, 10))
 print('The primes:', collect(sequence.A000040, 10))
 print('Mersenne exponents:', collect(sequence.A000043, 8))
 print('Fibonacci numbers:', collect(sequence.A000045, 10))
