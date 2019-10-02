@@ -62,6 +62,9 @@ def is_prime(n):
     if n % 2 == 0:
         return False
 
+    # IDEA: Would checking only for prime factors be an optimization here?
+    # TODO: Leverage yield_prime() recursively or cache known primes
+    # SEE: https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic
     for i in range(3, math.ceil(math.sqrt(n)) + 1, 2):
         if n % i == 0:
             return False
