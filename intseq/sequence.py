@@ -1,5 +1,6 @@
 import math
 from collections import deque
+from .utility import cached_pure_generator
 from .utility import digit_product
 from .utility import digit_sum
 from .utility import is_prime
@@ -24,6 +25,7 @@ def A000040():
         yield n
 
 # Mersenne exponents
+@cached_pure_generator
 def A000043():
     n = 2
     while True:
@@ -66,6 +68,7 @@ def A000290():
         n += 1
 
 # Mersenne primes
+@cached_pure_generator
 def A000668():
     n = 2
     while True:
