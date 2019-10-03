@@ -151,3 +151,10 @@ def A007954():
     while True:
         yield digit_product(n)
         n += 1
+
+# Characteristic function of primes
+def A010051():
+    n = 1
+    while True:
+        yield 1 if is_prime(n) else 0
+        n += 1

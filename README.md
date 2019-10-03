@@ -20,3 +20,4 @@ Implementations of select [OEIS](http://oeis.org/) integer sequences in Python 3
 - [A006530](http://oeis.org/A006530): Greatest prime factor of n
 - [A007953](http://oeis.org/A007953): Digital sum of n
 - [A007954](http://oeis.org/A007954): Digital product of n
+- [A010051](http://oeis.org/A010051): Characteristic function of primes
