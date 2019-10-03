@@ -174,3 +174,11 @@ def A019506():
                 yield n
 
         n += 1
+
+# Digit sum of n equals the sum of its prime factors
+def A063737():
+    n = 2
+    while True:
+        if digit_sum(n) == sum(prime_factorization(n, True)):
+            yield n
+        n += 1
