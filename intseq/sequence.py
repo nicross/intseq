@@ -138,6 +138,22 @@ def A006530():
         yield prime_factorization(n)[-1]
         n += 1
 
+# Smith numbers
+def A006753():
+    n = 2
+    while True:
+        if not is_prime(n):
+            dsum = digit_sum(n)
+
+            fsum = 0
+            for i in prime_factorization(n, True):
+                fsum += digit_sum(i)
+
+            if dsum == fsum:
+                yield n
+
+        n += 1
+
 # Digital sum of n
 def A007953():
     n = 0
