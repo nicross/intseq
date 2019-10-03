@@ -158,3 +158,19 @@ def A010051():
     while True:
         yield 1 if is_prime(n) else 0
         n += 1
+
+# Hoax numbers
+def A019506():
+    n = 2
+    while True:
+        if not is_prime(n):
+            dsum = digit_sum(n)
+
+            fsum = 0
+            for i in prime_factorization(n):
+                fsum += digit_sum(i)
+
+            if dsum == fsum:
+                yield n
+
+        n += 1
