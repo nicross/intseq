@@ -13,6 +13,7 @@ Implementations of select [OEIS](http://oeis.org/) integer sequences in Python 3
 - [A000108](http://oeis.org/A000108): Catalan numbers
 - [A000290](http://oeis.org/A000290): The squares
 - [A000668](http://oeis.org/A000668): Mersenne primes
+- [A001223](http://oeis.org/A001223): Prime gaps
 - [A001462](http://oeis.org/A001462): Golomb's sequence
 - [A002024](http://oeis.org/A002024): n appears n times
 - [A005408](http://oeis.org/A005408): The odd numbers

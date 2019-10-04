@@ -92,6 +92,15 @@ def A000668():
 
         n += 1
 
+# Prime gaps
+def A001223():
+    primes = yield_prime()
+    p = next(primes)
+
+    for n in primes:
+        yield n - p
+        p = n
+
 # Golomb's sequence
 def A001462():
     for n in [1, 2, 2]:
