@@ -3,6 +3,8 @@ from collections import deque
 from .utility import cached_pure_generator
 from .utility import digit_product
 from .utility import digit_sum
+from .utility import euler_phi
+from .utility import is_coprime
 from .utility import is_prime
 from .utility import is_square
 from .utility import prime_factorization
@@ -12,6 +14,13 @@ from .utility import yield_prime
 def A000004():
     while True:
         yield 0
+
+# Euler totient of n
+def A000010():
+    n = 1
+    while True:
+        yield euler_phi(n)
+        n += 1
 
 # The one sequence
 def A000012():
