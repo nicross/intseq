@@ -3,7 +3,7 @@ Implementations of select [OEIS](http://oeis.org/) integer sequences in Python 3
 
 ## Included sequences
 - [A000004](http://oeis.org/A000004): The zero sequence
-- [A000004](http://oeis.org/A000010): Euler phi of n
+- [A000010](http://oeis.org/A000010): Euler phi of n
 - [A000012](http://oeis.org/A000012): The one sequence
 - [A000027](http://oeis.org/A000027): The positive integers
 - [A000035](http://oeis.org/A000035): Parity of n
