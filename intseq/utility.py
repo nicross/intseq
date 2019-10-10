@@ -71,6 +71,15 @@ def is_prime(n):
 
     return True
 
+def is_coprime(a, b):
+    a = prime_factorization(a)
+    b = prime_factorization(b)
+
+    for n in a:
+        if n in b:
+            return False
+    return True
+
 def is_square(n):
     sqrt = math.sqrt(n)
     return sqrt == math.floor(sqrt)
