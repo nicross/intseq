@@ -51,6 +51,21 @@ def digits(n):
     for digit in str(n):
         yield int(digit)
 
+def euler_phi(n):
+    if n < 1:
+        return 0
+
+    if n == 1:
+        return 1
+
+    x = 0
+
+    for i in range(1, n):
+        if is_coprime(n, i):
+            x += 1
+
+    return x
+
 @cached_pure_function
 def is_prime(n):
     if n <= 1:
