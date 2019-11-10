@@ -211,6 +211,15 @@ def A010051():
         yield 1 if is_prime(n) else 0
         n += 1
 
+# n is triangular
+def A010054():
+    n = 0
+    while True:
+        yield 1
+        for i in range(n):
+            yield 0
+        n += 1
+
 # Hoax numbers
 def A019506():
     n = 2
