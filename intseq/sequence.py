@@ -81,6 +81,15 @@ def A000108():
         yield int(x)
         n += 1
 
+# Triangular numbers
+def A000217():
+    n = 0
+    sum = 0
+    while True:
+        sum += n
+        yield sum
+        n += 1
+
 # The squares
 def A000290():
     n = 0

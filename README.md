@@ -12,6 +12,7 @@ Implementations of select [OEIS](http://oeis.org/) integer sequences in Python 3
 - [A000045](http://oeis.org/A000045): Fibonacci numbers
 - [A000079](http://oeis.org/A000079): Powers of 2
 - [A000108](http://oeis.org/A000108): Catalan numbers
+- [A000290](http://oeis.org/A000217): Triangular numbers
 - [A000290](http://oeis.org/A000290): The squares
 - [A000330](http://oeis.org/A000330): Square pyramidal numbers
 - [A000668](http://oeis.org/A000668): Mersenne primes
