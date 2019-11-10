@@ -88,6 +88,15 @@ def A000290():
         yield n ** 2
         n += 1
 
+# Square pyramidal numbers
+def A000330():
+    n = 0
+    sum = 0
+    while True:
+        sum += n ** 2
+        yield sum
+        n += 1
+
 # Mersenne primes
 @cached_pure_generator
 def A000668():
